@@ -1,0 +1,14 @@
+{
+  "name": "种子承运交接台",
+  "path": "/seed/consignments",
+  "lookup": "/seed/consignments/",
+  "id": "consignmentNo",
+  "group": "packages",
+  "key": "Consignment-Key",
+  "modes": [
+    "accepted",
+    "rejected",
+    "accepted_disconnect",
+    "pending"
+  ]
+}

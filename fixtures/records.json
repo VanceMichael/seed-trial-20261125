@@ -1,0 +1,123 @@
+{
+  "varieties": [
+    {
+      "id": "VAR-1",
+      "name": "合成稻种甲"
+    },
+    {
+      "id": "VAR-2",
+      "name": "合成稻种乙"
+    }
+  ],
+  "sites": [
+    {
+      "id": "SITE-A",
+      "region": "plain"
+    },
+    {
+      "id": "SITE-B",
+      "region": "hill"
+    }
+  ],
+  "plans": [
+    {
+      "id": "PLAN-1",
+      "site": "SITE-A",
+      "season": "2027-spring",
+      "variety": "VAR-1",
+      "purpose": "research"
+    }
+  ],
+  "permits": [
+    {
+      "id": "PER-1",
+      "site": "SITE-A",
+      "variety": "VAR-1",
+      "season": "2027-spring",
+      "purpose": "research"
+    }
+  ],
+  "lots": [
+    {
+      "id": "SEED-1",
+      "variety": "VAR-1",
+      "grams": 10000,
+      "regions": [
+        "plain"
+      ],
+      "purpose": "research",
+      "seal": "S-1"
+    },
+    {
+      "id": "SEED-2",
+      "variety": "VAR-2",
+      "seeds": 50000,
+      "regions": [
+        "hill"
+      ],
+      "purpose": "research",
+      "seal": "S-2"
+    }
+  ],
+  "requestDrafts": [
+    {
+      "id": "REQ-SEED-1",
+      "plan": "PLAN-1",
+      "lot": "SEED-1",
+      "grams": 4000
+    }
+  ],
+  "actors": [
+    {
+      "id": "site-a",
+      "role": "site",
+      "site": "SITE-A"
+    },
+    {
+      "id": "approver",
+      "role": "approver"
+    },
+    {
+      "id": "keeper",
+      "role": "keeper"
+    },
+    {
+      "id": "quality",
+      "role": "quality"
+    }
+  ],
+  "sourceChanges": [
+    {
+      "id": "PLAN-MOVE",
+      "plan": "PLAN-1",
+      "newSite": "SITE-B",
+      "reason": "试验地变更"
+    },
+    {
+      "id": "WET-1",
+      "lot": "SEED-1",
+      "grams": 500,
+      "decision": "quarantine"
+    },
+    {
+      "id": "SOW-1",
+      "plan": "PLAN-1",
+      "lot": "SEED-1",
+      "grams": 1000,
+      "date": "2027-03-01"
+    },
+    {
+      "id": "TERMINATE-1",
+      "plan": "PLAN-1",
+      "reason": "站点终止本季试验"
+    },
+    {
+      "id": "RETURN-1",
+      "plan": "PLAN-1",
+      "lot": "SEED-1",
+      "grams": 2500,
+      "seal": "RETURN-SEAL-1",
+      "identityConfirmed": false
+    }
+  ]
+}

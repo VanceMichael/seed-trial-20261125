@@ -1,0 +1,44 @@
+[
+  {
+    "table": "plans",
+    "field": "site",
+    "target": "sites",
+    "nullable": false
+  },
+  {
+    "table": "plans",
+    "field": "variety",
+    "target": "varieties",
+    "nullable": false
+  },
+  {
+    "table": "permits",
+    "field": "site",
+    "target": "sites",
+    "nullable": false
+  },
+  {
+    "table": "permits",
+    "field": "variety",
+    "target": "varieties",
+    "nullable": false
+  },
+  {
+    "table": "lots",
+    "field": "variety",
+    "target": "varieties",
+    "nullable": false
+  },
+  {
+    "table": "requestDrafts",
+    "field": "plan",
+    "target": "plans",
+    "nullable": false
+  },
+  {
+    "table": "requestDrafts",
+    "field": "lot",
+    "target": "lots",
+    "nullable": false
+  }
+]
