@@ -8,7 +8,9 @@
   },
   "scripts": {
     "start:partner": "node support/peer.mjs",
-    "build": "node --check support/peer.mjs && node --check tests/partner.test.mjs",
+    "start": "node src/server.mjs",
+    "demo": "node support/demo.mjs",
+    "build": "node --check support/peer.mjs && node --check tests/partner.test.mjs && for f in src/*.mjs tests/seed-trial.test.mjs support/demo.mjs; do node --check \"$f\"; done",
     "test": "node --test tests/*.test.mjs"
   }
 }
